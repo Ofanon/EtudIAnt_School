@@ -4,7 +4,7 @@ import streamlit as st
 
 st.title("EtudIAnt : fiche de révision")
 
-genai.configure(api_key=st.text_input("Ta clée API"))
+genai.configure(api_key=st.chat_input("Ta clée API"))
 model = genai.GenerativeModel("gemini-1.5-flash-002")
 
 st.subheader("Sur quoi veux-tu créer une fiche de révision ?")
